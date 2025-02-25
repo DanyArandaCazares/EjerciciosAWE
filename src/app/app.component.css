@@ -1,0 +1,14 @@
+.product-container{
+    flex: auto;
+    width: 50%;
+}
+
+.detail-container{
+    flex: auto;
+    width: 50%;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+}

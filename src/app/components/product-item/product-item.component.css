@@ -1,0 +1,28 @@
+p{
+    width: 100%;
+    font-size: 13px;
+}
+
+p:hover{
+    width: 100%;
+    font-size: 13px;
+    background-color: beige;
+    cursor: pointer;
+}
+
+.onSaleProduct {
+    width: 100%;
+    font-size: 13px;
+    color: green;
+    font-weight: bold;
+}
+
+.soldOut {
+    color: red;
+    visibility: visible;
+    font-weight: bold;
+}
+
+span {
+    visibility: hidden;
+}

@@ -1,0 +1,14 @@
+<img src="{{productDescription.img}}" alt="">
+<h3>{{productDescription.name}}</h3>
+<p>ID: {{productDescription.id}}</p>
+<p>Precio: ${{productDescription.price}}</p>
+
+<p *ngIf="productDescription.inStock; else noStock" >Disponibilidad: En stock</p>
+<ng-template #noStock>
+    <p *ngIf="productDescription.inStock == false">Disponibilidad: No disponible</p>
+</ng-template>
+
+<p *ngIf="productDescription.onSale; else noSale" >En oferta: Sí</p>
+<ng-template #noSale>
+    <p *ngIf="productDescription.onSale == false">En oferta: No</p>
+</ng-template>
